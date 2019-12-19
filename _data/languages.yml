@@ -1,0 +1,8 @@
+pt:
+  label: Português
+  icon: ":flag_🇧🇷:"
+  path: "../"
+en:
+  label: English
+  icon: ":flag_🇺🇸:"
+  path: "/en/"
