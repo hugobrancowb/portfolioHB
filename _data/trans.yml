@@ -1,6 +1,8 @@
-contact:
-  en: "Contact"
-  pt: "Contato"
-desc:
-  en: Automation and Control Engineering student at Universidade de Pernambuco (UPE - Brazil)
-  pt: Estudante de Engenharia de Controle e Automação pela Universidade de Pernambuco (UPE)
+en:
+  contact: Contact
+  desc: Control and Automation Engineering student at Universidade de Pernambuco (UPE - Brazil)
+  ghrepo: View repository
+pt:
+  contact: Contato
+  desc: Estudante de Engenharia de Controle e Automação pela Universidade de Pernambuco (UPE)
+  ghrepo: Acessar repositório

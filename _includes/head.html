@@ -15,8 +15,8 @@
   {% else %}
     <meta content="website" property="og:type">
   {% endif %}
-  {% if page.description %}
-    <meta content="{{ page.description }}" property="og:description">
+  {% if site.data.trans[page.lang]['desc'] %}
+    <meta content="{{ site.data.trans[page.lang]['desc'] }}" property="og:description">
   {% else %}
     <meta content="{{ site.description }}" property="og:description">
   {% endif %}
@@ -54,8 +54,8 @@
   {% if page.url %}
     <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
   {% endif %}
-  {% if page.description %}
-    <meta name="twitter:description" content="{{ page.description }}">
+  {% if site.data.trans[page.lang]['desc'] %}
+    <meta name="twitter:description" content="{{ site.data.trans[page.lang]['desc'] }}">
   {% else %}
     <meta name="twitter:description" content="{{ site.description }}">
   {% endif %}
@@ -65,7 +65,7 @@
     <meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ site.author-img }}">
   {% endif %}
 
-	<meta name="description" content="{{ page.description }}">
+	<meta name="description" content="{{ site.data.trans[page.lang]['desc'] }}">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta property="og:image" content="">

@@ -1,6 +1,5 @@
 ---
 layout: default
-lang: pt
 ---
 
 <aside class="sidebar">
@@ -10,12 +9,12 @@ lang: pt
         <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/img/{% if site.author-img %}{{site.author-img}}{% endif %}" alt="{{site.author}}"></a>
       </div>
       <div class="author-name">{{site.author}}</div>
-      <p>{{ site.data.trans['desc'][page.lang] }}</p>
+      <p>{{ site.data.trans[page.lang]['desc'] }}</p>
     </div>
   </header> <!-- End Header -->
   <footer>      
     <section class="contact">
-      <h3 class="contact-title">{{ site.data.trans['contact'][page.lang] }}</h3>
+      <h3 class="contact-title">{{ site.data.trans[page.lang]['contact'] }}</h3>
       <ul>
         {% if site.social-twitter %}
           <li><a href="https://twitter.com/{{ site.social-twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
