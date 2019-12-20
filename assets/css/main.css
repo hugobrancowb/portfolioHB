@@ -1401,6 +1401,7 @@ ul.languages a:visited,
 ul.languages a:hover {
   color: #ffffff;
   text-decoration: none;
+  font-weight: 400;
 }
 
 ul.languages > li {
