@@ -102,6 +102,17 @@ a {
   -webkit-text-decoration-skip: objects;
   /* 2 */
 }
+/* hugo edicao*/
+a,a:visited,a:hover {
+  color: #386fa4;
+  font-weight: 600;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+
 
 /**
  * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
