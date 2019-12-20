@@ -1,6 +1,7 @@
 ---
 layout: post
 lang: pt
+ghcode: LSTMForecastSells
 lang-ref: lstmvendas1c
 title: "Previsão de vendas utilizando Redes Neurais LSTM"
 date: 2019-12-19 12:00:00 -0300
