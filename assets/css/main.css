@@ -1410,12 +1410,18 @@ div.lang-options ul > li:last-child {
 }
 
 /* github botão button call to action */
+div.githubCodeWrap {
+  margin-top: 7px;
+}
 .githubbutton {
   background-color: #151a2b;
   font-weight: 400;
   -webkit-border-radius: 3px;
           border-radius: 3px;
-  padding: 0.1rem 0.5rem;
+  padding: 0.15rem 0.5rem;
+}
+.githubbutton > i {
+  margin-right: 2px;
 }
 
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
