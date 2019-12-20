@@ -1409,6 +1409,15 @@ div.lang-options ul > li:last-child {
   margin-right: auto;
 }
 
+/* github botão button call to action */
+.githubbutton {
+  background-color: #151a2b;
+  font-weight: 400;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  padding: 0.1rem 0.5rem;
+}
+
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
