@@ -10,9 +10,10 @@ layout: default
       </div>
       <div class="author-name">{{site.author}}</div>
       <p>{{ site.data.trans[page.lang]['desc'] }}</p>
+      <a href="{{site.baseurl}}/curriculo.pdf" target="_blank" alt="Download CV"><p class="curriculo">{{ site.data.trans[page.lang]['curriculum'] }}</p></a>    
     </div>
   </header> <!-- End Header -->
-  <footer>      
+  <footer>  
     <section class="contact">
       <h3 class="contact-title">{{ site.data.trans[page.lang]['contact'] }}</h3>
       <ul>

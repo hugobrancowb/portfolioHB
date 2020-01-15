@@ -112,8 +112,6 @@ a:hover {
   text-decoration: underline;
 }
 
-
-
 /**
  * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
@@ -1419,6 +1417,21 @@ div.lang-options ul > li:first-child {
 }
 div.lang-options ul > li:last-child {
   margin-right: auto;
+}
+
+p.curriculo {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+a p.curriculo {
+  color: white;
+  margin-top: 20px;
+}
+
+a p.curriculo::before, a p.curriculo::after {
+  content: ".";
+  margin: 0 8px;
 }
 
 /* github botão button call to action */
