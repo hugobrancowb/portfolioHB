@@ -20,7 +20,7 @@ social-email: hugobrancowb@gmail.com # add your Email address
 discus-identifier: #mr-brown # add your discus identifier
 
 # Tracker
-analytics: # Google Analytics
+analytics: UA-156504943-1
 
 # Build Settings
 markdown: kramdown
