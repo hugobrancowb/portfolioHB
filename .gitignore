@@ -36,3 +36,5 @@ Temporary Items
 portfolioflexworkspace.code-workspace
 
 .jekyll-cache/
+
+*.ai
