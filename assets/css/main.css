@@ -1434,6 +1434,14 @@ a p.curriculo::before, a p.curriculo::after {
   margin: 0 8px;
 }
 
+h2, h3 {
+  text-transform: uppercase;
+}
+
+h2.post-title {
+  text-transform: none;
+}
+
 /* github botão button call to action */
 div.githubCodeWrap {
   margin-top: 7px;
