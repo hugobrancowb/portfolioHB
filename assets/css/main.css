@@ -1460,7 +1460,7 @@ div.githubCodeWrap {
 /* legenda imagens img subtitle */
 p.p_img {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 p.img-subtitle {
