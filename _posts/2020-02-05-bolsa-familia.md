@@ -68,7 +68,7 @@ Para melhor ilustrar a distribuição de renda pelo país, foram criados os dois
 Por fim, o último gráfico exibe a progressão dos pagamentos para cada ano de dados disponível no Portal. A título de comparação, resolvi dividir cada valor total pelo respectivo salário mínimo de cada ano a fim de mensurar, qualitativamente, se os pagamentos do Programa acompanham ou não o aumento do salário. Como resultado, observamos que de 2014 a 2017 os pagamentos tiveram queda constante em seu valor proporcional, com um indicativo de melhora em 2018. Observe que essa queda acompanhou a crise econômica do país, [que teve início em 2014](https://g1.globo.com/economia/noticia/crise-economica-atrasou-o-desenvolvimento-do-brasil-em-3-anos-aponta-firjan.ghtml).
 
 
->Todos dados utilizados nesse artigo estão [disponíveis em meu repositório no Github](https://github.com/hugobrancowb/bolsa_familia_data). Os gráficos desse post possuem uma versão interativa no mesmo artigo publicado em [hugobrancowb.github.io](https://hugobrancowb.github.io/).
+>Todos dados utilizados nesse artigo estão [disponíveis em meu repositório no Github](https://github.com/hugobrancowb/bolsa_familia_data).
 
 
 ## Referências
