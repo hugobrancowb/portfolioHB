@@ -800,7 +800,7 @@ img {
   display: inline-block;
 }
 
-.wrap-content  p > img {
+.wrap-content  p > a > img {
   max-width: 70%;
   display: flex;
   margin: auto;
@@ -1457,10 +1457,24 @@ div.githubCodeWrap {
   margin-right: 7px;
 }
 
+/* legenda imagens img subtitle */
+p.p_img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+p.img-subtitle {
+  font-style: italic;
+  color: #ada8a8;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 85%;
+}
+
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  .wrap-content p > img {
+  .wrap-content p > a > img {
     max-width: 100%;
     display: flex;
     margin: auto;
