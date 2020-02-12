@@ -5,6 +5,6 @@ $.map(img_post, function(e) {
     $('<p class="img-subtitle">' + subtitle + '</p>').insertAfter(e);
     $(e).wrap("<a href=" + link + " target='_blank'></a>");
 });
-$.map(img_post.parent(), function(e) {
+$.map(img_post.parent().parent(), function(e) {
     $(e).addClass('p_img');
 });
