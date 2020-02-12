@@ -34,12 +34,6 @@ layout: default
         {% endif %}
       </ul>
     </section> <!-- End Section Contact -->
-    <ul class="languages">      
-      {% for lang in site.data.languages %}
-      {% assign language = lang[1] %}
-      <li><a href="{{site.baseurl}}{{ language.path }}">{{ language.label }}</a></li>
-      {% endfor %}
-    </ul>
     <div class="copyright">
       <p>{{site.time | date: '%Y'}} &copy; {{site.author}}</p>
     </div>

@@ -18,21 +18,6 @@ layout: main
       <header class="header-page">
         <h1 class="page-title">{{page.title}}</h1>
         <div class="page-date"><span>{{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-          {% if page.layout != 'index' %} <!-- Idiomas -->
-            {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
-            {% if posts.size == 0 %}
-                {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
-            {% endif %}
-            {% if posts.size > 1 %}
-              <div class="lang-options">
-                  <ul>
-                  {% for post in posts %}
-                  <li><a href="{{ site.base-url }}{{ post.url }}" class='highlighter-rouge' title='View in {{ site.data.languages[post.lang].label }}'>{{ site.data.languages[post.lang].label }}</a></li>
-                  {% endfor %}
-                  </ul>
-              </div>
-            {% endif %}
-          {% endif %}
           <div class="githubCodeWrap">
             {% if page.ghcode %}
             <ul class="languages">
