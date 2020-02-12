@@ -1,7 +1,7 @@
 var maincolor = 'rgb(251,174,53)';
 
 /* gráfico: estados em 2019 */
-$("<div id='totalestados2019' style='min-height:500px;'></div>").insertAfter('h2#resultados');
+$("<div id='totalestados2019' style='min-height:500px;'></div>").insertAfter('h2#resultados + p');
 $.getJSON('./assets/js/data/bolsa_familia_data_per_estado_2019.json', function( data ) {
     let states = [];
     let totals = [];
@@ -21,7 +21,7 @@ $.getJSON('./assets/js/data/bolsa_familia_data_per_estado_2019.json', function( 
      }];
 
     let layout2019 = {
-        title: "Repasses para cada estado durante 2019",
+        title: "Pagamentos para cada estado durante 2019",
         hovermode: 'closest',
         font: {size: 12},
         xaxis: { title: 'Estados',
@@ -35,23 +35,26 @@ $.getJSON('./assets/js/data/bolsa_familia_data_per_estado_2019.json', function( 
       };
       
     let config = {responsive: true,
-    displayModeBar: false};
+    //displayModeBar: false,
+};
 
     Plotly.newPlot('totalestados2019', data2019, layout2019, config);
 });
 /***********************************************/
 
 /* gráfico: regiões em 2019 */
-$("<div id='chartpies' style='display:flex;max-height:400px;'><div id='regioes2019' style='width:50%;height:100%;'></div><div id='regioes2019_proporc' style='width:50%;height:100%;'></div></div>").insertAfter('div#totalestados2019');
+$("<div id='chartpies' style='min-height:500px;'></div>").insertAfter('div#totalestados2019 + p + p');
+$("<div id='chartpies2' style='min-height:500px;'></div>").insertAfter('div#chartpies');
+//$("<div id='chartpies' style='display:flex;max-height:400px;'><div id='regioes2019' style='width:50%;height:100%;'></div><div id='regioes2019_proporc' style='width:50%;height:100%;'></div></div>").insertAfter('div#totalestados2019 + p + p');
 /*
 
 */
 var colorspie = [
-    'rgb(186, 255, 71)',
-    'rgb(0, 53, 166)', 
-    'rgb(2, 136, 203)', 
-    'rgb(4, 223, 241)', 
-    'rgb(74, 255, 184)',
+    'rgb(255, 214, 102)',
+    'rgb(230, 150, 39)', 
+    'rgb(255, 194, 106)', 
+    'rgb(112, 91, 7)', 
+    'rgb(63, 47, 18)',
 ];
 let regioes2019 = [{ 
     values: [4.444994978,
@@ -102,15 +105,15 @@ let layout_regioes_2019_proporc = {
 };
     
 let config = {responsive: true,
-displayModeBar: false,
+//displayModeBar: false,
 };
 
-Plotly.newPlot('regioes2019', regioes2019, layout_regioes_2019, config);
-Plotly.newPlot('regioes2019_proporc', regioes2019_proporc, layout_regioes_2019_proporc, config);
+Plotly.newPlot('chartpies', regioes2019, layout_regioes_2019, config);
+Plotly.newPlot('chartpies2', regioes2019_proporc, layout_regioes_2019_proporc, config);
 /***********************************************/
 
 /* gráfico: repasses durante os anos */
-$("<div id='totalanos' style='min-height:500px;'></div>").insertAfter('div#chartpies');
+$("<div id='totalanos' style='min-height:500px;'></div>").insertAfter('div#chartpies2 + p');
 $.getJSON('./assets/js/data/bolsa_familia_data_per_year.json', function( data ) {
     let years = [];
     let totals = [];
@@ -142,7 +145,7 @@ $.getJSON('./assets/js/data/bolsa_familia_data_per_year.json', function( data ) 
      }];
 
     let layout_anos = {
-        title: "Repasses ao longo dos anos",
+        title: "Pagamentos do Bolsa Família ao longo dos anos",
         hovermode: 'closest',
         font: {size: 12},
         xaxis: { title: 'Anos',
@@ -156,8 +159,62 @@ $.getJSON('./assets/js/data/bolsa_familia_data_per_year.json', function( data ) 
       };
       
     let config = {responsive: true,
-    displayModeBar: false};
+    //displayModeBar: false,
+};
 
     Plotly.newPlot('totalanos', data_anos, layout_anos, config);
+});
+/***********************************************/
+
+/* gráfico: repasses durante os anos */
+$("<div id='totalanos_proporc' style='min-height:500px;'></div>").insertAfter('div#totalanos');
+$.getJSON('./assets/js/data/bolsa_familia_data_per_year.json', function( data ) {
+    let years = [];
+    let totals = [];
+    let salario = [678, // 2013
+                   724, // 2014
+                   788, // 2015
+                   880, // 2016
+                   937, // 2017
+                   954, // 2018
+                   998];// 2019
+
+    $.map( data, function( e ) {
+        years.push(parseInt(e.year));
+        totals.push(parseFloat(e.total)/1000000);
+    });
+
+    for (let i = 0; i < years.length; i++) {
+        totals[i] = totals[i]/salario[i];
+    }
+
+    let data_anos = [{ 
+        x: years,
+        y: totals,
+        type: 'scatter',
+        mode: 'lines+markers+text',
+        textposition: 'top',        
+        //hovertemplate: 'R$ %{y:.2f} bilhões<extra></extra>',
+        showlegend: false,
+        hoverinfo:'skip',
+        marker: { color: maincolor}
+     }];
+
+    let layout_anos = {
+        title: "Pagamentos do Bolsa Família ao longo dos anos<br>em valores proporcionais ao salário mínimo",
+        hovermode: 'closest',
+        font: {size: 12},
+        xaxis: { title: 'Anos',
+                 fixedrange: true },
+        yaxis: { title: 'Valor dos pagamentos',
+                 showticklabels: false,
+                 fixedrange: true }
+      };
+      
+    let config = {responsive: true,
+    //displayModeBar: false,
+};
+
+    Plotly.newPlot('totalanos_proporc', data_anos, layout_anos, config);
 });
 /***********************************************/
