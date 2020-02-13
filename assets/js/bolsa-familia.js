@@ -35,7 +35,7 @@ $.getJSON('./assets/js/data/bolsa_familia_data_per_estado_2019.json', function( 
       };
       
     let config = {responsive: true,
-    //displayModeBar: false,
+    displayModeBar: false,
 };
 
     Plotly.newPlot('totalestados2019', data2019, layout2019, config);
@@ -105,7 +105,7 @@ let layout_regioes_2019_proporc = {
 };
     
 let config = {responsive: true,
-//displayModeBar: false,
+displayModeBar: false,
 };
 
 Plotly.newPlot('chartpies', regioes2019, layout_regioes_2019, config);
@@ -159,7 +159,7 @@ $.getJSON('./assets/js/data/bolsa_familia_data_per_year.json', function( data ) 
       };
       
     let config = {responsive: true,
-    //displayModeBar: false,
+    displayModeBar: false,
 };
 
     Plotly.newPlot('totalanos', data_anos, layout_anos, config);
@@ -212,7 +212,7 @@ $.getJSON('./assets/js/data/bolsa_familia_data_per_year.json', function( data ) 
       };
       
     let config = {responsive: true,
-    //displayModeBar: false,
+    displayModeBar: false,
 };
 
     Plotly.newPlot('totalanos_proporc', data_anos, layout_anos, config);
