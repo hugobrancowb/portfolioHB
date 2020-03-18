@@ -1097,20 +1097,10 @@ table tfoot td {
   display: block;
   padding: 5px;
   font-size: 18px;
-  -webkit-transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
-  -o-transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
-  transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
-}
-
-.contact ul li a:hover {
-  color: #ffffff;
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 footer .copyright {
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   margin: 0;
 }
@@ -1402,6 +1392,16 @@ ul.languages a:hover {
   font-weight: 400;
 }
 
+div.copyright a,
+div.copyright p,
+div.copyright a:visited,
+div.copyright a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
 ul.languages > li {
   margin: auto;
 }
@@ -1419,19 +1419,22 @@ div.lang-options ul > li:last-child {
   margin-right: auto;
 }
 
-p.curriculo {
+a.curriculo p {
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
-}
-a p.curriculo {
   color: white;
   margin-top: 20px;
 }
 
-a p.curriculo::before, a p.curriculo::after {
+a.curriculo p::before, a.curriculo p::after {
   content: ".";
   margin: 0 8px;
+}
+
+a.curriculo, a.curriculo:hover, a.curriculo:visited {
+  text-decoration: none;
+  color: white;
 }
 
 h2, h3 {
@@ -1526,8 +1529,6 @@ p.img-subtitle {
     background-color: #151a2b;
     -webkit-border-radius: 0 0 5px 5px;
             border-radius: 0 0 5px 5px;
-    /*-webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
-            box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);*/
   }
   .sidebar footer {
     margin-bottom: 10px;
