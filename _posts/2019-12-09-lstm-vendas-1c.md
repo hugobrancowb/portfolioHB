@@ -1,9 +1,9 @@
 ---
 layout: post
-lang: pt
-ghcode: LSTMForecastSells
-lang-ref: lstmvendas1c
 title: "Previsão de vendas utilizando Redes Neurais LSTM"
+ghcode: LSTMForecastSells
+lang: pt
+lang-ref: lstmvendas1c
 date: 2019-12-19 12:00:00 -0300
 description: Aplicação de uma rede neural para a previsão de lucros para o mês seguinte em uma grande loja de eletrônicos.
 img: graficosvendas1c_cover.png # Add image post (optional)

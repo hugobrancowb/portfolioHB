@@ -1,9 +1,9 @@
 ---
 layout: post
-lang: pt
-ghcode: bolsa_familia_data
-lang-ref: bolsa-familia
 title: "Mineração de Dados do Portal da Transparência - Uma breve análise dos pagamentos do Bolsa Família ao longo dos anos"
+ghcode: bolsa_familia_data
+lang: pt
+lang-ref: bolsa-familia
 date: 2020-02-12 13:50:00 -0300
 description: Escrevi um código em JavaScript para adquirir 467.826 dados referentes a 7 anos de pagamentos do Programa Bolsa Família.
 img: bolsa_capa.jpg
