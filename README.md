@@ -1,14 +1,5 @@
-# Theme: Flexible-Jekyll
+# Portfólio Hugo Branco
 
-![](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/promo-img.jpg?raw=true)
+Este repositório contém códigos utilizados para gerar um site estático utilizando **Jekyll** para explicar e exibir resultados de alguns projetos que realizei.
 
-Check the theme in action [Demo](https://artemsheludko.github.io/flexible-jekyll/)
-
-## License
-
-GNU General Public License v3.0
-
-## Donate
-
-<p>If you like the themes that I create you can become my sponsor on <a href="https://www.patreon.com/artemsheludko" target="_blank">Patreon</a>.
-<p align="center"><b>Thank you for your support ❤️</b></p>
+O site utiliza como base o tema [Flexible-Jekyll](http://artemsheludko.com/flexible-jekyll/) com personalizações feitas por mim utilizando **JavaScript, CSS e Plotly** para exibir gráficos interativos.
