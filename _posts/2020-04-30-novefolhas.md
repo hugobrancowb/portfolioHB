@@ -6,10 +6,10 @@ customsite: https://novefolhas.studio/
 lang: pt
 lang-ref: novefolhas
 date: 2020-04-29 10:00:00 -0300
-description: Nove Folhas é um Web App criado com React e NodeJS capaz de gerar currículos em PDF a partir dos dados inseridos pelo usuário.
+description: Nove Folhas é uma aplicação web criada com React e NodeJS capaz de gerar currículos em PDF a partir dos dados inseridos pelo usuário.
 img: novefolhas_capa.jpg
 fig-caption: #
-tags: [WebDev, WebApp, JavaScript, React, NodeJS]
+tags: [Front-end, React, NodeJS, JavaScript, WebDev, WebApp]
 permalink: novefolhas
 script: false
 ---
