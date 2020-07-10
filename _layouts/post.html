@@ -19,11 +19,14 @@ layout: main
         <h1 class="page-title">{{page.title}}</h1>
         <div class="page-date"><span>{{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
           <div class="githubCodeWrap">
-            {% if page.ghcode %}
             <ul class="languages">
+              {% if page.ghcode %}
               <li ><a class="githubbutton" href="http://github.com/{{site.social-github}}/{{page.ghcode}}" target="_blank"><i class="fa fa-github"></i>{{site.data.trans[page.lang].ghrepo}}</a></li>
+              {% endif %}
+              {% if page.customsite %}
+              <li ><a class="githubbutton" href="{{page.customsite}}" target="_blank"><i class="fa fa-globe"></i>{{site.data.trans[page.lang].customsite}}</a></li>
+              {% endif %}
             </ul>
-            {% endif %}
           </div>
       </header>
       {{content | markdownify}}

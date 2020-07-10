@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "WebApp: Nove Folhas"
+title: "Nove Folhas"
 ghcode: novefolhas_cvmaker
+customsite: https://novefolhas.studio/
 lang: pt
 lang-ref: novefolhas
 date: 2020-04-29 10:00:00 -0300
