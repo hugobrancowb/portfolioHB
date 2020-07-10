@@ -1375,6 +1375,7 @@ div.lang-options ul {
   padding: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 div.lang-options a,
@@ -1403,7 +1404,7 @@ div.copyright a:hover {
 }
 
 ul.languages > li {
-  margin: auto;
+  margin: auto 5px;
 }
 
 div.lang-options ul {
